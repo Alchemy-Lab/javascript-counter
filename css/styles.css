@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  height: 100vh;
+}
+
+#counterBox {
+  width: 600px;
+  text-align: center;
+  font-family: Orbitron;
+  font-size: 2rem;
+  color: green;
+  padding: 5px 0;
+}
+
+#counterBox h1 {
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+#counter {
+  font-size: 3rem;
+  margin: 2rem auto 1rem auto;
+}
