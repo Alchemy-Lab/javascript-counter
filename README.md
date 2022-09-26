@@ -11,8 +11,8 @@ It's a simple counter with some useful features and a nice look
 
 The counter provides the following features:
 
-- Two buttons to add or substract a value to and from the counter
-- An input field to set the required step value to add or substract
+- Two buttons to add or subtract a value to and from the counter
+- An input field to set the required step value to add or subtract
 - A reset button to restart the counter
 - A validation system that checks the step value and force to a number from 1 up to 100
 
@@ -28,12 +28,12 @@ A common recent browser
 
 ## Installation
 
-Just download all files and folder and run locally in your favorite browser
+Just download all files and folder and run locally in your favorite browser opening the index.html file
 
 ## Take a look and try it
 
-You can try the counter following this link: [JavaScript Counter?](https://alchemy-lab.github.io/javascript-counter/)
+You can try the counter following this link: [JavaScript Counter](https://alchemy-lab.github.io/javascript-counter/)
 
-## :e-mail: Contact Me
+## Contact Me
 
-Any questions or features request? Contact me at webmaster@studioalchemy.net
+Any questions or features request? Fill the form at the [Studio Alchemy website](https://alchemy-lab.github.io/#contact)
