@@ -1,8 +1,8 @@
-# JavaScript Counter
+<h1 align="center">JavaScript Counter</h1>
+<p align="center"><img width="500" src="./img/JSCounter.png" /><br />
+Javascript Basics project for Start2Impact: a simple counter with fancy features</p>
 
-Javascript Basics project for Start2Impact: a simple counter with fancy features
-
-## :question: About the counter
+## About the counter
 
 This project is the final practice project for Start2Impact Javascript Basic course.
 It's a simple counter with some useful features and a nice look
@@ -36,4 +36,4 @@ You can try the counter following this link: [JavaScript Counter?](https://alche
 
 ## :e-mail: Contact Me
 
-Any questions or features request? contact me at webmaster@studioalchemy.net
+Any questions or features request? Contact me at webmaster@studioalchemy.net
