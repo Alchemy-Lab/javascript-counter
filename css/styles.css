@@ -75,3 +75,24 @@ body {
   box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
     6px 6px 10px rgba(0, 0, 0, 0.2);
 }
+
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+#reset {
+  width: 200px;
+  margin: 2rem auto;
+}
+
+#reset span {
+  font-size: 1.2rem;
+  color: red;
+}
+
+#stepText {
+  font-size: 1rem;
+  color: #999;
+}

@@ -26,6 +26,15 @@ stepBox.classList.add("button", "prevent-select");
 let minusButton = createHtmlElement("div", "minusButton", "<span>-</span>");
 minusButton.classList.add("button", "prevent-select");
 
+let stepText = createHtmlElement(
+  "p",
+  "stepText",
+  "Step starts from 1 up to 100"
+);
+
+let reset = createHtmlElement("div", "reset", "<span>Reset</span>");
+reset.classList.add("button", "prevent-select");
+
 document.body.insertAdjacentElement("afterbegin", counterBox);
 
 counterBox.appendChild(title);
@@ -34,10 +43,23 @@ counterBox.appendChild(buttonContainer);
 buttonContainer.appendChild(plusButton);
 buttonContainer.appendChild(stepBox);
 buttonContainer.appendChild(minusButton);
+counterBox.appendChild(stepText);
+counterBox.appendChild(reset);
+
+let step = document.getElementById("step");
 
 // Event listeners
 plusButton.addEventListener("click", () => updateCounter("+"));
 minusButton.addEventListener("click", () => updateCounter("-"));
+reset.addEventListener("click", resetCounter);
+
+step.addEventListener("input", () => {
+  if (step.value.length > step.maxLength) {
+    step.value = step.value.slice(0, step.maxLength);
+  }
+  if (step.value > maxValue) step.value = maxValue;
+  if (step.value < minValue) step.value = minValue;
+});
 
 // Core functions
 function createHtmlElement(element, id, content) {
@@ -62,4 +84,10 @@ function updateCounter(op) {
       counter.innerHTML = count -= value;
       break;
   }
+}
+
+function resetCounter() {
+  count = 0;
+  counter.innerHTML = count;
+  step.value = 1;
 }
